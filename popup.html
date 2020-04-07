@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>High Risk Template</title>
+<meta charset="utf-8">
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 50px;
+}
+th {
+  text-align: left;
+}
+.win_image{
+position: absolute;
+    top: 8px;
+    /*width: 420px;
+    height: 233px;*/
+    font-size: 60px;
+    font-weight: bold;
+    font-family: arial;
+    padding-top: 67px;
+    text-align: center;
+    
+}
+
+.win_image{
+    animation:blinkingText 1.2s infinite;
+
+   
+/*  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+</style>
+<script src="jquery.js"></script>
+<script src="logic.js"></script>
+</head>
+<body>
+
+
+<table style="width:50%">
+  
+  <tr>
+    <td class="one"></td>
+    <td class="two"></td>
+    <td class="three"></td>
+  </tr>
+  <tr>
+    <td class="four"></td>
+    <td class="five"></td>
+    <td class="six"></td>
+  </tr>
+  <tr>
+    <td class="seven"></td>
+    <td id="onenine"></td>
+    <td class="nine"></td>
+  </tr>
+</table>
+
+<h1 class="win_image">Player 1 Won </h1>
+
+<!--script src="popup.js"></script-->
+
+</body>
+</html>
